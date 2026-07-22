@@ -1,147 +1,129 @@
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: none;
 }
 
-html{
-    scroll-behavior: smooth;
+body {
+      background: linear-gradient(90deg, #dadafc, #bdf1fa, #bbfcdc);
 }
 
-.navbar{
-    padding: 15px 0;
+.navbar {
+  background: linear-gradient(135deg, #f9d5fe4d, #c0daff, #c2ffe3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.308);
 }
 
-.navbar-brand{
-    font-size: 25px;
-    font-weight: bold;
+.navbar-brand:hover img {
+  transform: scale(1.1);
 }
 
-.nav-link{
-    margin-left: 15px;
-    font-weight: 500;
+.nav-link {
+  color: #5c4b51;
+  font-weight: 500;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-.nav-link:hover{
-    color: #0d6efd !important;
+.nav-link:hover {
+  text-shadow: 0 0 8px #333134;
 }
 
-.hero{
-    padding-top: 140px;
-    padding-bottom: 100px;
-    background: linear-gradient(to right,#f8f9fa,#e9f3ff);
+.btn-gradient {
+  background: #dadafc;
+  color: #000000;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.hero h1{
-    font-size: 52px;
-    font-weight: bold;
+.btn-gradient:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(51, 50, 51, 0.6);
 }
 
-.nama{
-    color: #0d6efd;
+.btn-outline-light {
+    color: #000000;
+    border-color: #000000;
 }
 
-.hero p{
-    text-align: justify;
-    line-height: 30px;
+.konten img {
+    width: 250px;
 }
 
-.profile{
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center top;
-    display: block;
-    margin: auto;
-    border: 5px solid white;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.btn{
-    padding: 10px 25px;
-    border-radius: 10px;
+.social-icons a {
+  color: #333;
+  transition: transform 0.3s, color 0.3s;
 }
 
-section{
-    padding-top: 90px;
-    padding-bottom: 90px;
+.social-icons a:hover {
+  transform: translateY(-5px);
+  color: #de92fa;
 }
 
-section h2{
-    font-weight: bold;
-    margin-bottom: 10px;
+.row {
+    justify-content: center;
 }
 
-.card{
-    border-radius: 15px;
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
 }
 
-.card-body{
-    padding: 30px;
+.education-card {
+  border-radius: 20px;
+  transition: .3s;
 }
 
-.table th{
-    width: 120px;
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0,0, 0.18);
 }
 
-.progress{
-    height: 25px;
-    border-radius: 20px;
+.education-icon {
+  width: 70px;
+  height: 70px;
+  background: #dadafc;
+  color: rgb(0, 0, 0);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
 }
 
-.progress-bar{
-    font-weight: bold;
+.badge {
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 20px;
 }
 
-footer{
-    background-color: #212529;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.skill-badge {
+  background-color: #dadafc;
+  color: #000000;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
-@media (max-width:992px){
-
-    .hero{
-        text-align:center;
-        padding-top:120px;
-    }
-
-    .hero p{
-        text-align:center;
-    }
-
-    .profile{
-        width:260px;
-        height:260px;
-        margin-top:40px;
-    }
-
-    .nav-link{
-        margin-left:0;
-    }
-
+.project-card {
+  border-radius: 20px;
+  transition: .3s;
 }
 
-@media (max-width:576px){
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0,0, 0.18);
+}
 
-    .hero h1{
-        font-size:36px;
-    }
-
-    .hero h3{
-        font-size:22px;
-    }
-
-    .profile{
-        width:220px;
-        height:220px;
-    }
-
-    .btn{
-        width:100%;
-        margin-bottom:10px;
-    }
-
+.footer {
+  background: linear-gradient(135deg, #f9d5fe4d, #c0daff, #c2ffe3);
+  color: #000000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.308);
 }
